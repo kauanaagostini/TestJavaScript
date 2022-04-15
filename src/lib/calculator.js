@@ -6,7 +6,7 @@ module.exports.sum = (num1, num2) => {
     throw new Error('Please check your input')
   }
 
-  return +int1 + +int2;
+  return int1 + int2;
 }
 
 module.exports.sub = (num1, num2) => {
@@ -17,7 +17,7 @@ module.exports.sub = (num1, num2) => {
     throw new Error('Please check your input')
   }
 
-  return +int1 - +int2;
+  return int1 - int2;
 }
 
 module.exports.div = (num1, num2) => {
@@ -28,7 +28,7 @@ module.exports.div = (num1, num2) => {
     throw new Error('Please check your input')
   }
 
-  return +int1 / +int2;
+  return int1 / int2;
 }
 
 module.exports.mul = (num1, num2) => {
@@ -39,5 +39,5 @@ module.exports.mul = (num1, num2) => {
     throw new Error('Please check your input')
   }
 
-  return +int1 * +int2;
+  return int1 * int2;
 }
