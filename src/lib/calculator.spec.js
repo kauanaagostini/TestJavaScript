@@ -1,4 +1,4 @@
-const { sum, div, sub, mul } = require('./calculator');
+import { sum, div, sub, mul } from './calculator';
 
 it('should sum 2 and 2 and the result must be 4', () => {
   expect(sum(2, 2)).toBe(4);
@@ -55,7 +55,7 @@ it('should mul 3 and 3 even one of them is a string and the result must be 9', (
 
 it('should throw an error if what is provider to the method cannot be mul', () => {
   expect(() => mul('', '3')).toThrowError();
-  expect(() => mul([3,3])).toThrowError();
+  expect(() => mul([3, 3])).toThrowError();
   expect(() => mul({})).toThrowError();
   expect(() => mul()).toThrowError();
 });
